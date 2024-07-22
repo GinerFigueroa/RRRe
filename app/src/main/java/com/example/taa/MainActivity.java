@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NotasInteractionListener {
       Button btnLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,5 +21,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+    }
+
+    @Override
+    public void voideditNotaClick(Nota nota) {
+
+    }
+
+    @Override
+    public void voideliminaNotaClick(Nota nota) {
+
+    }
+
+    @Override
+    public void voidfavoritaNotaClick(Nota nota) {
+
     }
 }
